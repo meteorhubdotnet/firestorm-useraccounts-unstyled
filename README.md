@@ -1,4 +1,4 @@
-# meteorhubdotnet:firestorm-useraccounts-core
+# meteorhubdotnet:firestorm-useraccounts-unstyled
 
 Fork of [useraccounts:unstyled](https://github.com/meteor-useraccounts/unstyled) for
 the [Firestorm project](https://github.com/meteorhubdotnet/firestorm).
