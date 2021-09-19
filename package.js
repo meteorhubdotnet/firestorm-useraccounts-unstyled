@@ -1,12 +1,12 @@
 Package.describe({
   summary: 'Fork of useraccounts:unstyled for Firestorm',
-  version: '1.0.4',
+  version: '1.0.5',
   name: 'meteorhubdotnet:firestorm-useraccounts-unstyled',
   git: 'https://github.com/meteorhubdotnet/firestorm-useraccounts-unstyled',
 });
 
-Package.on_use(function(api, where) {
-  api.versionsFrom('METEOR@2.2');
+Package.onUse(function(api, where) {
+  api.versionsFrom('METEOR@2.3.6');
 
   api.use([
     'templating@1.4.0',
@@ -14,18 +14,18 @@ Package.on_use(function(api, where) {
   ], 'client');
 
   api.use([
-    'meteorhubdotnet:firestorm-useraccounts-core@1.0.4',
+    'meteorhubdotnet:firestorm-useraccounts-core@1.0.5',
   ], ['client', 'server']);
 
   // Requires all routing packages loads before this asking for weak dependencies.
   // api.use('useraccounts:flow-routing@1.14.2', ['client', 'server'], {weak: true});
-  api.use('meteorhubdotnet:firestorm-iron-useraccounts@1.0.4', ['client', 'server'], {weak: true});
+  api.use('meteorhubdotnet:firestorm-iron-useraccounts@1.0.5', ['client', 'server'], {weak: true});
 
   api.imply([
     'meteorhubdotnet:firestorm-useraccounts-core',
   ], ['client', 'server']);
 
-  api.add_files([
+  api.addFiles([
     'lib/at_error.html',
     'lib/at_error.js',
     'lib/at_form.html',
@@ -67,10 +67,10 @@ Package.on_use(function(api, where) {
   ], ['client']);
 });
 
-Package.on_test(function(api) {
+Package.onTest(function(api) {
   api.use([
-    'meteorhubdotnet:firestorm-useraccounts-unstyled@1.0.4',
-    'meteorhubdotnet:firestorm-useraccounts-core@1.0.4',
+    'meteorhubdotnet:firestorm-useraccounts-unstyled@1.0.5',
+    'meteorhubdotnet:firestorm-useraccounts-core@1.0.5',
   ]);
 
   api.use([
@@ -79,7 +79,7 @@ Package.on_test(function(api) {
     'test-helpers'
   ], ['client', 'server']);
 
-  api.add_files([
+  api.addFiles([
     'tests/tests.js'
   ], ['client', 'server']);
 });
