@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Fork of useraccounts:unstyled for Firestorm',
-  version: '1.0.8',
+  version: '1.0.10',
   name: 'meteorhubdotnet:firestorm-useraccounts-unstyled',
   git: 'https://github.com/meteorhubdotnet/firestorm-useraccounts-unstyled',
 });
@@ -14,12 +14,12 @@ Package.onUse(function(api, where) {
   ], 'client');
 
   api.use([
-    'meteorhubdotnet:firestorm-useraccounts-core@1.0.7',
+    'meteorhubdotnet:firestorm-useraccounts-core@1.0.10',
   ], ['client', 'server']);
 
   // Requires all routing packages loads before this asking for weak dependencies.
   // api.use('useraccounts:flow-routing@1.14.2', ['client', 'server'], {weak: true});
-  api.use('meteorhubdotnet:firestorm-iron-useraccounts@1.0.7', ['client', 'server'], {weak: true});
+  api.use('meteorhubdotnet:firestorm-iron-useraccounts@1.0.10', ['client', 'server'], {weak: true});
 
   api.imply([
     'meteorhubdotnet:firestorm-useraccounts-core',
@@ -69,8 +69,8 @@ Package.onUse(function(api, where) {
 
 Package.onTest(function(api) {
   api.use([
-    'meteorhubdotnet:firestorm-useraccounts-unstyled@1.0.7',
-    'meteorhubdotnet:firestorm-useraccounts-core@1.0.7',
+    'meteorhubdotnet:firestorm-useraccounts-unstyled@1.0.10',
+    'meteorhubdotnet:firestorm-useraccounts-core@1.0.10',
   ]);
 
   api.use([
