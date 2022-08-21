@@ -1,6 +1,6 @@
 Package.describe({
   summary: 'Fork of useraccounts:unstyled for Firestorm',
-  version: '1.0.6',
+  version: '1.0.7',
   name: 'meteorhubdotnet:firestorm-useraccounts-unstyled',
   git: 'https://github.com/meteorhubdotnet/firestorm-useraccounts-unstyled',
 });
