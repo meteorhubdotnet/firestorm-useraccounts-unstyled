@@ -1,15 +1,15 @@
 Package.describe({
   summary: 'Fork of useraccounts:unstyled for Firestorm',
-  version: '1.0.5',
+  version: '1.0.6',
   name: 'meteorhubdotnet:firestorm-useraccounts-unstyled',
   git: 'https://github.com/meteorhubdotnet/firestorm-useraccounts-unstyled',
 });
 
 Package.onUse(function(api, where) {
-  api.versionsFrom('METEOR@2.3.6');
+  api.versionsFrom('METEOR@2.7.3');
 
   api.use([
-    'templating@1.4.0',
+    'templating@1.4.2',
     'underscore',
   ], 'client');
 
